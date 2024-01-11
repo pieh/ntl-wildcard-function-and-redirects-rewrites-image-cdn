@@ -1,0 +1,89 @@
+<html>
+  <body>
+    <h2>Image CDN Rewrite</h2>
+    <ul>
+      <li>
+        <code>squirrel.jpg</code>
+        <img
+          src="/image-cdn-rewrite?url=squirrel.jpg&w=300"
+          width="300"
+          height="278"
+        />
+      </li>
+      <li>
+        <code>/squirrel.jpg</code>
+        <img
+          src="/image-cdn-rewrite?url=/squirrel.jpg&w=300"
+          width="300"
+          height="278"
+        />
+      </li>
+      <li>
+        <code>%2Fsquirrel.jpg</code>
+        <img
+          src="/image-cdn-rewrite?url=%2Fsquirrel.jpg&w=300"
+          width="300"
+          height="278"
+        />
+      </li>
+    </ul>
+    <h2>Image CDN Redirect</h2>
+    <ul>
+      <li>
+        <code>squirrel.jpg</code>
+        <img
+          src="/image-cdn-redirect?url=squirrel.jpg&w=300"
+          width="300"
+          height="278"
+        />
+      </li>
+      <li>
+        <code>/squirrel.jpg</code>
+        <img
+          src="/image-cdn-redirect?url=/squirrel.jpg&w=300"
+          width="300"
+          height="278"
+        />
+      </li>
+      <li>
+        <code>%2Fsquirrel.jpg</code>
+        <img
+          src="/image-cdn-redirect?url=%2Fsquirrel.jpg&w=300"
+          width="300"
+          height="278"
+        />
+      </li>
+    </ul>
+    <h2>Static asset rewrite</h2>
+    <img src="/squirrel-rewrite" width="300" height="278" />
+    <h2>Static asset redirect</h2>
+    <img src="/squirrel-redirect" width="300" height="278" />
+    <h2>Image CDN Directly</h2>
+    <ul>
+      <li>
+        <code>squirrel.jpg</code>
+        <img
+          src="/.netlify/images?url=squirrel.jpg&w=300"
+          width="300"
+          height="278"
+        />
+      </li>
+      <li>
+        <code>/squirrel.jpg</code>
+        <img
+          src="/.netlify/images?url=/squirrel.jpg&w=300"
+          width="300"
+          height="278"
+        />
+      </li>
+      <li>
+        <code>%2Fsquirrel.jpg</code>
+        <img
+          src="/.netlify/images?url=%2Fsquirrel.jpg&w=300"
+          width="300"
+          height="278"
+        />
+      </li>
+    </ul>
+  </body>
+</html>

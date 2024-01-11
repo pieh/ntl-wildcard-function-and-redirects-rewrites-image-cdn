@@ -1,0 +1,31 @@
+[build]
+command = "node -v"
+publish = "."
+
+[[redirects]]
+from = "/image-cdn-rewrite"
+to = "/.netlify/images?url=:url&w=:width"
+status = 200
+
+[redirects.query]
+url = ":url"
+w = ":width"
+
+[[redirects]]
+from = "/image-cdn-redirect"
+to = "/.netlify/images?url=:url&w=:width"
+status = 301
+
+[redirects.query]
+url = ":url"
+w = ":width"
+
+[[redirects]]
+from = "/squirrel-rewrite"
+to = "/squirrel.jpg"
+status = 200
+
+[[redirects]]
+from = "/squirrel-redirect"
+to = "/squirrel.jpg"
+status = 301
