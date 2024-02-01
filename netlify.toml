@@ -29,3 +29,13 @@ status = 200
 from = "/squirrel-redirect"
 to = "/squirrel.jpg"
 status = 301
+
+[[redirects]]
+from = "/external-rewrite"
+to = "https://docs.netlify.com/routing/redirects/rewrites-proxies/"
+status = 200
+
+[[redirects]]
+from = "/external-redirect"
+to = "https://docs.netlify.com/routing/redirects/rewrites-proxies/"
+status = 301
